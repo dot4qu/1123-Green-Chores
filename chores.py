@@ -69,7 +69,7 @@ def prettyprint_responsibilities(opening_string, person_chore_tuples):
 	return output_str
 
 if __name__ == '__main__':
-	now = datetime.now() - timedelta(days=1)
+	now = datetime.now()
 
 	connection = sqlite3.connect(db)
 
