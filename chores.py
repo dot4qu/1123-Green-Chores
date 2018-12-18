@@ -15,7 +15,7 @@ email_column = 'Email'
 choreid_column = "ChoreID"
 id_column = "ID"
 from_addr = '1123greenchores@gmail.com'
-email_pass = 'washyourdishes0!' # TODO :: get this nonsense out of here
+email_pass = 'washyourdishes0!' # go ahead, try it
 
 def rotate_chores(person_choreid_tuples):
 	length = len(person_choreid_tuples)
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 	message['Subject'] = 'Chores for the upcoming week: {0} through {1}'\
 		.format(now.strftime('%m/%d'), (now + timedelta(days=7)).strftime('%m/%d'))
 	message.attach(MIMEText(chores_str))
-	
+
 	smtp.sendmail(from_addr,\
 		email_list,\
 		str(message))
