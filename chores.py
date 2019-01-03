@@ -108,7 +108,7 @@ if __name__ == '__main__':
 	message['Subject'] = 'Chores for the upcoming week: {0} through {1}'\
 		.format(now.strftime('%m/%d'), (now + timedelta(days=7)).strftime('%m/%d'))
 	message.attach(MIMEText(chores_str))
-	
+
 	smtp.sendmail(from_addr,\
 		email_list,\
 		str(message))
