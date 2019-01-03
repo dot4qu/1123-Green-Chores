@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 
 from pdb import set_trace as bp
 
-db = '/Users/brianteam/Developer/Chores/chores.db'
+db = '/home/pi/1123-Green-Chores/chores.db'
 chores_table = "Chores"
 people_table = "People"
 name_column = "Name"
@@ -15,7 +15,7 @@ email_column = 'Email'
 choreid_column = "ChoreID"
 id_column = "ID"
 from_addr = '1123greenchores@gmail.com'
-email_pass = '' # TODO :: get this nonsense out of here
+email_pass = os.environ['CHORES_PW']
 
 def rotate_chores(person_choreid_tuples):
 	length = len(person_choreid_tuples)
