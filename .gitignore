@@ -104,3 +104,6 @@ venv.bak/
 .mypy_cache/
 
 *.db
+
+# Don't include the cron logs
+*.txt
