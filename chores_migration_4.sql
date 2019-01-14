@@ -1,5 +1,5 @@
-- this is not going work for a straight run, this is specific to the state the db was in when brax needed to be dropped
-- aka DONT RUN THIS
+-- this is not going work for a straight run, this is specific to the state the db was in when brax needed to be dropped
+-- aka DONT RUN THIS
 
 DELETE FROM People WHERE Name='Braxton';
 DELETE FROM Chores WHERE ID=3;
